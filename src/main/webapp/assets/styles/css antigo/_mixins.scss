@@ -1,0 +1,25 @@
+
+@mixin full-page($w, $min-h) {
+	position: relative;
+	width:#{$w};
+	height:auto;
+	min-height:#{$min-h};
+	float:left;
+}
+
+@mixin background-cover($imagem, $position) {
+	background: url(../images/#{$imagem}.jpg) no-repeat center center #{$position}; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+@mixin content-center($max-w){
+	width:100%;
+	max-width:#{$max-w};
+	height:100%;
+	margin: 0 auto;
+	box-sizing:border-box;
+}
+

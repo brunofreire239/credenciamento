@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	
+	<!-- Constants -->
+	<constant name="struts.devMode" value="false" />
+	<constant name="struts.patternMatcher" value="regex" />
+	<constant name="struts.multipart.maxSize" value="5428800" />
+	<constant name="struts.enable.SlashesInActionNames" value="true"/>
+	<constant name="struts.mapper.alwaysSelectFullNamespace" value="false"/>
+	<constant name="struts.convention.default.parent.package" value="global-results"/>
+	<constant name="struts.action.extension" value=","/>
+	<constant name="struts.multipart.saveDir" value="/opt/jboss-as-7.1.1.Final/standalone/tmp/struts2" />
+	<constant name="struts.convention.result.path" value="/WEB-INF/"/>
+	<!-- Global Results -->
+	<include file="struts-global-results.xml"></include>
+
+	<!-- Default Action -->
+	<include file="struts-default-action.xml"></include>
+		
+</struts>

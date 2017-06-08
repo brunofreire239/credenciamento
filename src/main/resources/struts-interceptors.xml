@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<package name="interceptors" extends="global-results" namespace="/*">
+
+		<interceptors>
+			<interceptor name="authentication" class="br.com.poscers.interceptors.UserInterceptor"></interceptor>
+			<interceptor name="blockStudent" class="br.com.poscers.interceptors.StudentInterceptor"></interceptor>
+
+			<interceptor-stack name="authStack">
+				<interceptor-ref name="authentication" />
+				<interceptor-ref name="defaultStack" />
+				<interceptor-ref name="fileUpload">
+					<param name="maximumSize">52428800</param>
+				</interceptor-ref>
+			</interceptor-stack>
+			
+			<interceptor-stack name="blockStack">
+				<interceptor-ref name="blockStudent" />
+				<interceptor-ref name="defaultStack" />
+			</interceptor-stack>
+			
+		</interceptors>
+
+		<default-interceptor-ref name="authStack" />
+
+	</package>
+</struts>
