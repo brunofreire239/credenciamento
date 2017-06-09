@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jboss-web>
 
-	<context-root>credencial</context-root>
+	<context-root>qsm</context-root>
 
 </jboss-web> 

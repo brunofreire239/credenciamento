@@ -12,15 +12,15 @@
 		<div class="content-topo">
 		     
 		     <div id="logo">
-				<a href="credencial/"><img src="<s:url value="/assets/images/logo.svg"/>" /></a>
+				<a href="qsm/"><img src="<s:url value="/assets/images/logo.svg"/>" /></a>
 				
 			 </div>
 
 			 <nav>
 			 	<ul>
-			 		<li><a href = "/credencial/usuario/indexUsuario">USUÁRIOS</a></li>
- 			 		<li><a href = "/credencial/event/indexEvent">OPERADORA</a></li>
-			 		<li><a href = "/credencial/usuario/formZebra">FICHA</a></li>
+			 		<li><a href = "/qsm/usuario/indexUsuario">USUÁRIOS</a></li>
+ 			 		<li><a href = "/qsm/event/indexEvent">OPERADORA</a></li>
+			 		<li><a href = "/qsm/usuario/formZebra">FICHA</a></li>
 			 	</ul>
 			 </nav>
 
@@ -39,7 +39,7 @@
 				<div class="col-md-4 cad-usuario" >
 
 							
-							<a href="/credencial/usuario/formUsuario">
+							<a href="/qsm/usuario/formUsuario">
 								<span class="btn-incluir">
 						    	Incluir Novo		
 							    </span>
