@@ -58,8 +58,8 @@ public class UserAction extends ActionSupport{
 	public UserAction() throws NamingException {
 		InitialContext ctx = new InitialContext();
 		try {								
-			userDao = (UserDAO) ctx.lookup("java:global/projectZebraMaven/UserDAO!br.com.projectzebramaven.dao.UserDAO");
-			eventDao = (EventDAO) ctx.lookup("java:global/projectZebraMaven/EventDAO!br.com.projectzebramaven.dao.EventDAO");
+			userDao = (UserDAO) ctx.lookup("java:global/credenciamento/UserDAO!br.com.projectzebramaven.dao.UserDAO");
+			eventDao = (EventDAO) ctx.lookup("java:global/credenciamento/EventDAO!br.com.projectzebramaven.dao.EventDAO");
 		} catch (NameNotFoundException e) {
 			e.printStackTrace();
 		}
